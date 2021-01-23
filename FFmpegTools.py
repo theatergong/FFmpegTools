@@ -73,7 +73,7 @@ if number == 9:
     os.system("clear")
     one = str(input("请输入视频文件(带后缀)："))
     two = str(input("请输出视频文件(带后缀)："))
-    cmd = 'ffmpeg -y -hide_banner -i "%s" -filter_complex "[0:v]scale=-2:-2[v];[v]minterpolate='mi_mode=mci:mc_mode=aobmc:me_mode=bidir:mb_size=16:vsbmc=1:fps=60'" -max_muxing_queue_size 1024  "%s"' %(one, two)
+    cmd = 'ffmpeg -y -hide_banner -i "%s" -filter_complex "[0:v]scale=-2:-2[v];[v]minterpolate="mi_mode=mci:mc_mode=aobmc:me_mode=bidir:mb_size=16:vsbmc=1:fps=60"" -max_muxing_queue_size 1024  "%s"' %(one, two)
     os.system(cmd)                   
 if number == 10:
     print("程序已退出！")
