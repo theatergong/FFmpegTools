@@ -18,6 +18,8 @@
 
 8-调整视频尺寸(分辨率)
 
+9-光流法补帧60FPS
+
 ## 安装使用
     git clone https://github.com/AYueMortal/FFmpegTools
     cd FFmpegTools
