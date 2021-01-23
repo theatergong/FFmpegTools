@@ -24,4 +24,5 @@
     python FFmpegTools.py
     
 ## 注意事项
+#### 视频输入需要完整路径
 #### 需要python环境和FFmpeg
