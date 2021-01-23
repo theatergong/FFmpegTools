@@ -11,7 +11,8 @@ number = int(input('''
 6-视频压H264与H265编码
 7-提取视频中的音频文件
 8-调整视频尺寸(分辨率)
-9-退出\n
+9-光流法补60FPS
+10-退出\n
 输入：'''))
 if number == 1:
     os.system("clear")
@@ -69,5 +70,11 @@ if number == 8:
     cmd = 'ffmpeg -i "%s" -filter:v scale=%s -c:a copy "%s"' %(one, size, two)
     os.system(cmd)
 if number == 9:
+    os.system("clear")
+    one = str(input("请输入视频文件(带后缀)："))
+    two = str(input("请输出视频文件(带后缀)："))
+    cmd = 'ffmpeg -y -hide_banner -i "%s" -filter_complex "[0:v]scale=-2:-2[v];[v]minterpolate='mi_mode=mci:mc_mode=aobmc:me_mode=bidir:mb_size=16:vsbmc=1:fps=60'" -max_muxing_queue_size 1024  "%s"' %(one, two)
+    os.system(cmd)                   
+if number == 10:
     print("程序已退出！")
     exit()
