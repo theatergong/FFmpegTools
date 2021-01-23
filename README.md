@@ -1,6 +1,6 @@
 # FFmpegTools
 
-###### FFmpegTools功能介绍
+## 功能介绍
 
 1-获取视频信息
 
@@ -18,4 +18,10 @@
 
 8-调整视频尺寸(分辨率)
 
-使用方法： > git clone
+## 安装使用
+    git clone https://github.com/AYueMortal/FFmpegTools
+    cd FFmpegTools
+    python FFmpegTools.py
+    
+## 注意事项
+#### 需要python环境和FFmpeg
