@@ -21,7 +21,7 @@
 9-光流法补帧60FPS
 
 ## 安装使用
-    git clone https://github.com/AYueMortal/FFmpegTools
+    git clone https://github.com/theatergong/FFmpegTools
     cd FFmpegTools
     python FFmpegTools.py
     
