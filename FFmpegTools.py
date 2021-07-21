@@ -30,7 +30,7 @@ if number == 3:
     os.system("clear")
     m3u8 = str(input("请输入m3u8直播源："))
     name = str(input("请输入视频保存名称(带路径，带后缀)："))
-    cmd = 'ffmpeg -i "%s -c copy "%s"' %(m3u8, name)
+    cmd = 'ffmpeg -i "%s" -c copy "%s"' %(m3u8, name)
     os.system(cmd)
 if number == 4:
     os.system("clear")
