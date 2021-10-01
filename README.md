@@ -1,4 +1,7 @@
 # FFmpegTools
+推荐Linux系统下安装figlet包
+如是Windows环境，可以删掉这行代码
+##os.system("figlet FFmpegTools")
 
 ## 功能介绍
 
@@ -19,6 +22,12 @@
 8-调整视频尺寸(分辨率)
 
 9-光流法补帧60FPS
+
+10-视频本体倒放
+
+11-视频中音频倒放
+
+12-退出
 
 ## 安装使用
     git clone https://github.com/theatergong/FFmpegTools
