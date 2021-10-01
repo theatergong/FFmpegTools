@@ -1,7 +1,7 @@
 # FFmpegTools
 推荐Linux系统下安装figlet包
 如是Windows环境，可以删掉这行代码
-##os.system("figlet FFmpegTools")
+## os.system("figlet FFmpegTools")
 
 ## 功能介绍
 
