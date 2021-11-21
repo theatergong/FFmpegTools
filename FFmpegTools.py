@@ -1,4 +1,5 @@
 import os
+import re
 
 os.system("clear")
 os.system("figlet FFmpegTools")
@@ -45,8 +46,10 @@ if number == 5:
     print("支持视频格式如下：")
     os.system("ffmpeg -formats")
     one = str(input("请输入视频文件(带后缀)："))
-    two = one.replace(".","_new.")
-    cmd = 'ffmpeg -i "%s" -qscale 0 "%s"' %(one, two)
+    two = str(input("请输入视频格式(例如mp4)："))
+    type = one.split(".")[-1]
+    three = one.replace(type,two)
+    cmd = 'ffmpeg -i "%s" -qscale 0 "%s"' %(one, three)
     os.system(cmd)
 if number == 6:
     os.system("clear")
